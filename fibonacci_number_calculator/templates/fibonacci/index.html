@@ -1,0 +1,12 @@
+{% extends 'fibonacci/layout.html' %}
+
+{% block content %}
+    <form method="GET" action="/fib_calculate">
+        <h3 class="center-align">{{title}}</h3>
+        <input id="number" type="text" name="number" class="center-align" required><br>
+        <br>
+        <div class="wrapper">
+            <button class="btn waves-effect waves-light button" type="submit">Go</button><br>
+        </div>
+    </form>
+{% endblock %}
